@@ -9,19 +9,6 @@
   <meta name="description" content="Technical strategy, positioning, and go-to-market execution for engineering-driven B2B and industrial technology companies." />
   <meta name="keywords" content="technical consulting, go-to-market, positioning, brand strategy, industrial marketing, engineering markets, B2B" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Dr. Markus Erlich Consulting | Technical Strategy & Marketing" />
-  <meta property="og:description" content="We help engineering-driven B2B technology companies translate complex capabilities into clear positioning and disciplined go-to-market execution." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://drerlich.com/" />
-  <meta property="og:image" content="https://drerlich.com/img/DrErlichLogo.png" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Dr. Markus Erlich Consulting | Technical Strategy & Marketing" />
-  <meta name="twitter:description" content="Technical strategy, positioning, and go-to-market execution for engineering-driven B2B companies." />
-  <meta name="twitter:image" content="https://drerlich.com/img/DrErlichLogo.png" />
-
   <link rel="icon" href="favicon.ico" />
 
   <!-- Fonts -->
@@ -34,10 +21,10 @@
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
   <link href="lib/animate-css/animate.min.css" rel="stylesheet" />
 
-  <!-- Main theme CSS (keep, but we override hero styles below) -->
+  <!-- Main theme CSS (keep, but we override below) -->
   <link href="css/style.css" rel="stylesheet" />
 
-  <!-- Premium consulting overrides (hero is white + modern layout) -->
+  <!-- Premium consulting overrides + the 4 requested fixes -->
   <style>
     /* Base */
     html, body { background: #fff; }
@@ -45,18 +32,25 @@
     a { color: inherit; }
     a:hover { opacity: 0.85; }
 
-    /* Header (white, subtle shadow) */
+    /* ===============================
+       HEADER FIX #1: Header logo larger
+       =============================== */
     #header {
       background: #fff !important;
       box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+      padding: 12px 0; /* extra vertical room for bigger logo */
     }
-    #header #logo img { max-height: 34px; }
+    #header #logo img {
+      max-height: 54px; /* adjust 54–64 if you want bigger/smaller */
+      width: auto;
+    }
     #header .nav-menu a { color: #111 !important; }
     #header .nav-menu li:hover > a,
     #header .nav-menu .menu-active > a { opacity: 0.75; }
 
     /* ===============================
        HERO: FORCE WHITE (no overlay)
+       + FIX #2: Hero logo larger
        =============================== */
     #hero {
       background: #ffffff !important;
@@ -77,6 +71,11 @@
       margin: 0 auto;
       padding: 0 22px;
       background: transparent !important;
+    }
+    #hero .hero-logo img {
+      max-width: 340px; /* FIX #2: enlarge logo in hero (try 300–380) */
+      width: 100%;
+      height: auto;
     }
 
     .hero-kicker {
@@ -151,13 +150,13 @@
       opacity: 0.9;
     }
 
-    /* Sections (more premium spacing) */
+    /* Sections */
     section { padding: 80px 0; }
     .section-title { font-family: "Raleway", sans-serif; font-weight: 800; letter-spacing: -0.2px; }
     .section-description { max-width: 900px; margin: 0 auto; line-height: 1.75; color: #222; }
     .section-title-divider { opacity: 0.14; }
 
-    /* Simple "approach" cards */
+    /* Cards */
     .card-lite {
       border: 1px solid rgba(17,17,17,0.12);
       border-radius: 14px;
@@ -175,11 +174,34 @@
     }
     .card-lite p { margin: 0; color: #333; line-height: 1.7; }
 
-    /* Services list style (more consulting-like) */
+    /* ===============================
+       FIX #3: About paragraph larger
+       =============================== */
+    #about .section-description {
+      font-size: 18px;  /* try 18–20 */
+      line-height: 1.8;
+    }
+    #about .card-lite p {
+      font-size: 15.5px;
+      line-height: 1.75;
+    }
+
+    /* Services */
     .service-item .service-title { text-transform: none; letter-spacing: 0; }
     .service-item .service-description { color: #333; line-height: 1.7; }
 
-    /* Contact section tweaks */
+    /* ===============================
+       FIX #4: Services title alignment
+       (long title wraps; enforce equal title block height)
+       =============================== */
+    #services .service-item .service-title {
+      min-height: 44px;         /* adjust 44–56 if needed */
+      display: flex;
+      align-items: center;      /* use flex-start if you prefer top-aligned */
+      margin-top: 0;
+    }
+
+    /* Contact */
     #contact .info i { color: #111 !important; }
     #contact a { text-decoration: none; border-bottom: 1px solid rgba(17,17,17,0.25); }
     #contact a:hover { border-bottom-color: #111; }
@@ -194,6 +216,8 @@
       .hero-title { font-size: 34px; line-height: 1.12; }
       .hero-subtitle { font-size: 16px; }
       section { padding: 64px 0; }
+      #header #logo img { max-height: 46px; } /* slightly smaller on mobile */
+      #hero .hero-logo img { max-width: 280px; } /* slightly smaller on mobile */
     }
   </style>
 </head>
@@ -227,7 +251,7 @@
     <div class="hero-container">
       <div class="wow fadeIn">
         <div class="hero-logo" style="margin-bottom: 14px;">
-          <img src="img/DrErlichLogo.png" alt="Dr. Markus Erlich Consulting" style="max-width: 220px; height: auto;" />
+          <img src="img/DrErlichLogo.png" alt="Dr. Markus Erlich Consulting" />
         </div>
 
         <div class="hero-kicker">Boutique Consulting</div>
@@ -472,14 +496,6 @@
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <p><a href="mailto:info@drerlich.com">info@drerlich.com</a></p>
             </div>
-
-            <!-- Optional: add LinkedIn -->
-            <!--
-            <div>
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-              <p><a href="https://www.linkedin.com/in/YOURPROFILE" target="_blank" rel="noopener">LinkedIn</a></p>
-            </div>
-            -->
           </div>
         </div>
 
