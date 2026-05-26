@@ -103,13 +103,27 @@
     margin-bottom: 2.5rem;
   }
 
+  .hero-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  .hero-logo {
+    display: block;
+    max-width: 200px;
+    width: auto;
+    height: auto;
+  }
+
   .hero-eyebrow {
     font-family: 'Cormorant Garamond', serif;
     font-size: 0.78rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--accent);
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     display: flex;
     align-items: center;
     gap: 0.8rem;
@@ -808,7 +822,10 @@
 <!-- HERO -->
 <section id="hero">
   <div class="hero-left">
-    <div class="hero-eyebrow">Consulting</div>
+    <div class="hero-top-row">
+      <div class="hero-eyebrow">Consulting</div>
+      <img src="https://drerlich.com/img/DrErlichLogo.png" class="hero-logo" alt="Dr. Markus Erlich Consulting">
+    </div>
     <h1>Technical Strategy &amp; <em>Marketing</em> for Engineering Markets</h1>
     <p class="hero-desc">We help engineering-driven B2B technology companies translate complex capabilities into clear strategic positioning, differentiated value propositions, and disciplined go-to-market execution.</p>
     <div class="hero-ctas">
