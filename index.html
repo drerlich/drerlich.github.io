@@ -22,7 +22,7 @@
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  html { scroll-behavior: smooth; font-size: 18px; }
+  html { scroll-behavior: smooth; font-size: 20px; }
 
   body {
     background: var(--paper);
@@ -91,12 +91,15 @@
     padding: 6rem 4rem 6rem 5rem;
     position: relative;
     z-index: 2;
+    background: #ffffff;
   }
 
   .hero-logo {
-    height: 64px;
-    width: auto;
     display: block;
+    max-width: 220px;
+    width: auto;
+    height: auto;
+    align-self: flex-start;
     margin-bottom: 2.5rem;
   }
 
@@ -136,7 +139,7 @@
   }
 
   .hero-desc {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     color: var(--muted);
     max-width: 42ch;
     margin-bottom: 2.8rem;
@@ -327,7 +330,7 @@
   }
 
   .about-body {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--muted);
     line-height: 1.8;
     margin-bottom: 2.5rem;
@@ -351,7 +354,7 @@
 
   .pillar-num {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     color: var(--accent);
     letter-spacing: 0.15em;
     margin-bottom: 0.8rem;
@@ -359,9 +362,9 @@
   }
 
   .pillar p {
-    font-size: 0.92rem;
+    font-size: 1.05rem;
     color: var(--muted);
-    line-height: 1.65;
+    line-height: 1.7;
   }
 
   /* ── APPROACH ── */
@@ -385,7 +388,7 @@
   }
 
   .approach-intro {
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     color: rgba(245,242,235,0.6);
     line-height: 1.75;
     max-width: 68ch;
@@ -420,13 +423,13 @@
 
   .stage h3 {
     color: var(--paper);
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     margin-bottom: 1rem;
     font-family: 'Archivo Black', sans-serif;
   }
 
   .stage p {
-    font-size: 0.88rem;
+    font-size: 1rem;
     color: rgba(245,242,235,0.55);
     line-height: 1.7;
     margin-bottom: 1.2rem;
@@ -434,13 +437,13 @@
 
   .stage-output {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 0.75rem;
+    font-size: 0.88rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--accent-light);
     border-top: 1px solid rgba(245,242,235,0.12);
     padding-top: 1rem;
-    line-height: 1.8;
+    line-height: 2;
   }
 
   .stage-output strong {
@@ -460,7 +463,7 @@
   .services-left h2 { margin-bottom: 1rem; }
 
   .services-intro {
-    font-size: 1.08rem;
+    font-size: 1.2rem;
     color: var(--muted);
     line-height: 1.78;
     margin-bottom: 2rem;
