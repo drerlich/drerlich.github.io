@@ -54,6 +54,22 @@
     display: block;
   }
 
+  /* Mobile: clip to icon portion only */
+  @media (max-width: 900px) {
+    nav .logo-wrap {
+      display: block;
+      width: 48px;
+      height: 72px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    nav .logo-wrap img {
+      height: 72px;
+      width: auto;
+      max-width: none;
+    }
+  }
+
   nav ul {
     display: flex;
     gap: 2.4rem;
@@ -814,22 +830,6 @@
     h1 { font-size: clamp(2.1rem, 9vw, 2.9rem); }
     section { padding: 3rem 1.2rem; }
     #approach, #services, #contact, #philosophy { padding: 3rem 1.2rem; }
-
-    /* Show only the icon part of the logo in the nav on mobile */
-    nav .logo-wrap {
-      display: block;
-      width: 56px;
-      height: 56px;
-      overflow: hidden;
-      flex-shrink: 0;
-    }
-    nav .logo-wrap img {
-      height: 56px;
-      width: auto;
-      max-width: none;
-      object-fit: none;
-      object-position: left center;
-    }
   }
   .form-success {
     font-family: 'Cormorant Garamond', serif;
