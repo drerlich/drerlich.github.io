@@ -831,6 +831,13 @@
       object-position: left center;
     }
   }
+  .form-success {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--accent);
+    padding: 0.8rem 0;
+  }
 </style>
 </head>
 <body>
@@ -1037,8 +1044,9 @@
       <label for="message">Message</label>
       <textarea id="message" rows="6" placeholder="Tell us about your challenge…"></textarea>
     </div>
-    <button type="button" class="form-submit">Send Message</button>
-    <p class="form-note">By sending this message you agree that we may reply by email. We do not share your details.</p>
+    <button type="button" class="form-submit" id="sendBtn">Send Message</button>
+    <p class="form-note" id="formNote">By sending this message you agree that we may reply by email. We do not share your details.</p>
+    <p class="form-success" id="formSuccess" style="display:none;">✓ Your message has been sent. Thank you!</p>
   </div>
 </section>
 
@@ -1066,7 +1074,37 @@
 
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-  // Compact nav on scroll
+  // Contact form send
+  document.getElementById('sendBtn').addEventListener('click', function() {
+    const name    = document.getElementById('name').value.trim();
+    const email   = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !email || !message) {
+      alert('Please fill in your name, email, and message before sending.');
+      return;
+    }
+
+    const mailtoLink = 'mailto:info@drerlich.com'
+      + '?subject=' + encodeURIComponent(subject || 'Website enquiry from ' + name)
+      + '&body=' + encodeURIComponent(
+          'Name: ' + name + '\n'
+        + 'Email: ' + email + '\n\n'
+        + message
+        );
+
+    window.location.href = mailtoLink;
+
+    // Show success, hide form fields
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('subject').value = '';
+    document.getElementById('message').value = '';
+    document.getElementById('formNote').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+    document.getElementById('sendBtn').style.display = 'none';
+  });
   const nav = document.querySelector('nav');
   window.addEventListener('scroll', () => {
     nav.style.padding = window.scrollY > 60 ? '0.7rem 3rem' : '1.1rem 3rem';
