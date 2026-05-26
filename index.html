@@ -10,8 +10,8 @@
 <style>
   :root {
     --ink: #0e0e0e;
-    --paper: #f5f2eb;
-    --cream: #ede9df;
+    --paper: #ffffff;
+    --cream: #f5f5f5;
     --steel: #3a4a5c;
     --accent: #c8622a;
     --accent-light: #e8845a;
@@ -42,7 +42,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0.6rem 3rem;
-    background: rgba(245,242,235,0.92);
+    background: rgba(255,255,255,0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--rule);
     transition: padding 0.3s ease;
@@ -569,7 +569,8 @@
     font-size: 1.35rem;
     font-weight: 600;
     color: var(--muted);
-    max-width: 60ch;
+    max-width: 100%;
+    white-space: nowrap;
     margin: 0 auto;
     line-height: 1.8;
   }
