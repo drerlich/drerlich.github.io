@@ -22,7 +22,7 @@
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  html { scroll-behavior: smooth; font-size: 16px; }
+  html { scroll-behavior: smooth; font-size: 18px; }
 
   body {
     background: var(--paper);
@@ -49,7 +49,7 @@
   }
 
   nav .logo-wrap img {
-    height: 36px;
+    height: 52px;
     width: auto;
     display: block;
   }
@@ -62,7 +62,7 @@
 
   nav ul a {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-weight: 400;
     letter-spacing: 0.18em;
     text-transform: uppercase;
@@ -93,9 +93,16 @@
     z-index: 2;
   }
 
+  .hero-logo {
+    height: 64px;
+    width: auto;
+    display: block;
+    margin-bottom: 2.5rem;
+  }
+
   .hero-eyebrow {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 0.68rem;
+    font-size: 0.78rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--accent);
@@ -189,7 +196,7 @@
 
   .pill {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 0.62rem;
+    font-size: 0.72rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     padding: 0.3rem 0.75rem;
@@ -201,45 +208,56 @@
   .hero-right {
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: flex-end;
     background: var(--cream);
     overflow: hidden;
+    padding: 3rem;
   }
 
   .hero-right::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: 
+    background:
       repeating-linear-gradient(0deg, transparent, transparent 39px, var(--rule) 39px, var(--rule) 40px),
       repeating-linear-gradient(90deg, transparent, transparent 39px, var(--rule) 39px, var(--rule) 40px);
-    opacity: 0.6;
+    opacity: 0.5;
   }
 
   .hero-right-content {
     position: relative;
     z-index: 2;
-    padding: 4rem;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2rem;
   }
 
-  .hero-logo-large {
-    width: min(260px, 60%);
-    opacity: 0.18;
-    filter: grayscale(1);
-  }
-
-  .hero-diagram {
-    position: absolute;
-    bottom: 3rem;
-    right: 3rem;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 0.6rem;
-    letter-spacing: 0.08em;
-    color: var(--muted);
+  .hero-taglines {
     text-align: right;
-    line-height: 2;
+  }
+
+  .hero-tagline-item {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    line-height: 2.4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.8rem;
+  }
+
+  .hero-tagline-item::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background: var(--accent);
+    opacity: 0.5;
   }
 
   /* ── SECTION COMMONS ── */
@@ -250,7 +268,7 @@
 
   .section-label {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 0.65rem;
+    font-size: 0.78rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--accent);
@@ -333,7 +351,7 @@
 
   .pillar-num {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 0.62rem;
+    font-size: 0.75rem;
     color: var(--accent);
     letter-spacing: 0.15em;
     margin-bottom: 0.8rem;
@@ -416,7 +434,7 @@
 
   .stage-output {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 0.6rem;
+    font-size: 0.75rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--accent-light);
@@ -450,7 +468,7 @@
 
   .services-note {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 0.68rem;
+    font-size: 0.88rem;
     letter-spacing: 0.08em;
     color: var(--muted);
     padding: 1rem 1.2rem;
@@ -480,7 +498,7 @@
 
   .service-icon {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 0.62rem;
+    font-size: 0.75rem;
     letter-spacing: 0.15em;
     color: var(--accent);
     text-transform: uppercase;
@@ -561,7 +579,7 @@
 
   .contact-detail {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 0.75rem;
+    font-size: 0.88rem;
     letter-spacing: 0.08em;
     color: var(--muted);
     display: flex;
@@ -597,7 +615,7 @@
 
   .field label {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 0.62rem;
+    font-size: 0.78rem;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--muted);
@@ -642,7 +660,7 @@
 
   .form-note {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 0.6rem;
+    font-size: 0.78rem;
     color: var(--muted);
     opacity: 0.7;
   }
@@ -656,7 +674,7 @@
     align-items: center;
     justify-content: space-between;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 0.62rem;
+    font-size: 0.75rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
@@ -681,38 +699,98 @@
 
   /* ── RESPONSIVE ── */
   @media (max-width: 900px) {
-    nav { padding: 1rem 1.5rem; }
+    html { font-size: 17px; }
+
+    /* Nav: hide text links, show hamburger-style stacked layout */
+    nav { padding: 0.9rem 1.4rem; }
     nav ul { gap: 1.2rem; }
+    nav ul a { font-size: 0.72rem; letter-spacing: 0.12em; }
 
-    #hero { grid-template-columns: 1fr; }
+    /* Hero: single column, no right panel */
+    #hero { grid-template-columns: 1fr; min-height: auto; }
     .hero-right { display: none; }
-    .hero-left { padding: 4rem 2rem; }
+    .hero-left { padding: 3.5rem 1.5rem 3rem; }
+    h1 { font-size: clamp(2.2rem, 8vw, 3.2rem); }
+    .hero-desc { font-size: 1.1rem; max-width: 100%; }
+    .hero-eyebrow { font-size: 0.72rem; }
+    .btn-primary, .btn-ghost { font-size: 0.9rem; padding: 0.85rem 1.6rem; }
+    .pill { font-size: 0.68rem; padding: 0.3rem 0.7rem; }
 
-    section { padding: 4rem 2rem; }
+    /* Sections */
+    section { padding: 3.5rem 1.5rem; }
 
-    #about { grid-template-columns: 1fr; gap: 2rem; }
+    /* About */
+    #about { grid-template-columns: 1fr; gap: 1.5rem; }
+    .about-left { display: none; } /* label moves inline */
+    .about-tagline { font-size: 1.6rem; }
+    .about-body { font-size: 1.05rem; }
     .pillars { grid-template-columns: 1fr; }
-    .pillar { border-right: none; border-bottom: 1px solid var(--rule-strong); }
+    .pillar { border-right: none; border-bottom: 1px solid var(--rule-strong); padding: 1.4rem; }
     .pillar:last-child { border-bottom: none; }
+    .pillar-num { font-size: 0.75rem; }
+    .pillar h3 { font-size: 1rem; }
+    .pillar p { font-size: 0.95rem; }
 
-    .stages { grid-template-columns: 1fr 1fr; }
-    .stage:nth-child(2) { border-right: none; }
-    .stage:nth-child(odd):not(:last-child) { border-bottom: 1px solid rgba(245,242,235,0.15); }
+    /* Approach */
+    #approach { padding: 3.5rem 1.5rem; }
+    .approach-intro { font-size: 1rem; }
+    .stages { grid-template-columns: 1fr; border: 1px solid rgba(245,242,235,0.15); }
+    .stage { border-right: none; border-bottom: 1px solid rgba(245,242,235,0.15); padding: 1.8rem; }
+    .stage:last-child { border-bottom: none; }
+    .stage-num { font-size: 2.2rem; }
+    .stage h3 { font-size: 1rem; }
+    .stage p { font-size: 0.95rem; }
+    .stage-output { font-size: 0.78rem; line-height: 2; }
 
-    #services { grid-template-columns: 1fr; gap: 2.5rem; }
+    /* Section labels */
+    .section-label { font-size: 0.75rem; margin-bottom: 1.5rem; }
+    h2 { font-size: clamp(1.6rem, 6vw, 2.2rem); }
+    h3 { font-size: 1rem; }
+
+    /* Services */
+    #services { grid-template-columns: 1fr; gap: 2rem; padding: 3.5rem 1.5rem; }
+    .services-intro { font-size: 1.05rem; }
+    .services-note { font-size: 0.85rem; line-height: 1.7; }
     .services-grid { grid-template-columns: 1fr; }
-    .service-item:nth-child(even) { border-right: 1px solid var(--rule-strong); }
+    .service-item { border-right: none; padding: 1.4rem; }
+    .service-item:nth-child(even) { border-right: none; }
     .service-item:nth-last-child(-n+2) { border-bottom: 1px solid var(--rule-strong); }
     .service-item:last-child { border-bottom: none; }
+    .service-icon { font-size: 0.72rem; }
+    .service-item h3 { font-size: 1rem; }
+    .service-item p { font-size: 0.95rem; }
 
-    #contact { grid-template-columns: 1fr; gap: 2.5rem; }
+    /* Philosophy */
+    #philosophy { padding: 3.5rem 1.5rem; }
+    .philosophy-heading { font-size: clamp(1.4rem, 5.5vw, 2rem); }
+    .philosophy-quote { font-size: 1.1rem; }
+    .philosophy-body { font-size: 1rem; }
+
+    /* Contact */
+    #contact { grid-template-columns: 1fr; gap: 2rem; padding: 3.5rem 1.5rem; }
+    .contact-intro { font-size: 1.05rem; }
+    .contact-detail { font-size: 0.9rem; }
     .form-row { grid-template-columns: 1fr; }
     .field.full { grid-column: span 1; }
+    .field label { font-size: 0.75rem; }
+    .field input, .field textarea { font-size: 1.05rem; padding: 0.75rem 0.9rem; }
+    .form-submit { font-size: 0.9rem; padding: 0.9rem 1.8rem; width: 100%; text-align: center; }
+    .form-note { font-size: 0.75rem; }
 
-    footer { flex-direction: column; gap: 1rem; text-align: center; }
+    /* Footer */
+    footer { flex-direction: column; gap: 0.8rem; text-align: center; padding: 1.5rem; }
     footer img { margin: 0 auto; }
+    footer span { font-size: 0.72rem; }
+  }
 
-    #philosophy { padding: 4rem 2rem; }
+  @media (max-width: 480px) {
+    html { font-size: 16px; }
+    nav ul { gap: 0.8rem; }
+    nav ul a { font-size: 0.68rem; }
+    .hero-left { padding: 2.8rem 1.2rem 2.5rem; }
+    h1 { font-size: clamp(2rem, 9vw, 2.8rem); }
+    section { padding: 3rem 1.2rem; }
+    #approach, #services, #contact, #philosophy { padding: 3rem 1.2rem; }
   }
 </style>
 </head>
@@ -734,6 +812,7 @@
 <!-- HERO -->
 <section id="hero">
   <div class="hero-left">
+    <img src="https://drerlich.com/img/DrErlichLogo.png" class="hero-logo" alt="Dr. Markus Erlich Consulting">
     <div class="hero-eyebrow">Consulting</div>
     <h1>Technical Strategy<br>&amp; <em>Marketing</em><br>for Engineering<br>Markets</h1>
     <p class="hero-desc">We help engineering-driven B2B technology companies translate complex capabilities into clear strategic positioning, differentiated value propositions, and disciplined go-to-market execution.</p>
@@ -751,12 +830,13 @@
   </div>
   <div class="hero-right">
     <div class="hero-right-content">
-      <img src="https://drerlich.com/img/DrErlichLogo.png" class="hero-logo-large" alt="">
-    </div>
-    <div class="hero-diagram">
-      Strategy → Positioning → Execution<br>
-      Engineering Depth · Market Clarity<br>
-      Tel Aviv, Israel
+      <div class="hero-taglines">
+        <div class="hero-tagline-item">Motion Control &amp; Automation</div>
+        <div class="hero-tagline-item">Robotics</div>
+        <div class="hero-tagline-item">Industrial Electronics</div>
+        <div class="hero-tagline-item">Deep-Tech B2B</div>
+        <div class="hero-tagline-item">Engineering-driven Strategy</div>
+      </div>
     </div>
   </div>
 </section>
