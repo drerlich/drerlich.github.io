@@ -15,7 +15,7 @@
     --steel: #3a4a5c;
     --accent: #c8622a;
     --accent-light: #e8845a;
-    --muted: #7a7060;
+    --muted: #4a4238;
     --rule: rgba(14,14,14,0.12);
     --rule-strong: rgba(14,14,14,0.25);
   }
@@ -28,7 +28,7 @@
     background: var(--paper);
     color: var(--ink);
     font-family: 'Cormorant Garamond', Georgia, serif;
-    font-weight: 300;
+    font-weight: 600;
     line-height: 1.7;
     overflow-x: hidden;
   }
@@ -63,7 +63,7 @@
   nav ul a {
     font-family: 'Cormorant Garamond', serif;
     font-size: 0.85rem;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--ink);
@@ -126,11 +126,11 @@
   h1 {
     font-family: 'Archivo Black', sans-serif;
     font-weight: 800;
-    font-size: clamp(2.6rem, 4.5vw, 4.2rem);
-    line-height: 1.08;
+    font-size: clamp(3rem, 6.5vw, 6rem);
+    line-height: 1.05;
     letter-spacing: -0.03em;
     color: var(--ink);
-    margin-bottom: 1.8rem;
+    margin-bottom: 2rem;
   }
 
   h1 em {
@@ -139,9 +139,10 @@
   }
 
   .hero-desc {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
+    font-weight: 600;
     color: var(--muted);
-    max-width: 65ch;
+    max-width: 80ch;
     margin-bottom: 2.8rem;
     line-height: 1.75;
   }
@@ -156,7 +157,7 @@
   .btn-primary {
     font-family: 'Cormorant Garamond', serif;
     font-size: 0.85rem;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     text-decoration: none;
@@ -175,7 +176,7 @@
   .btn-ghost {
     font-family: 'Cormorant Garamond', serif;
     font-size: 0.85rem;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     text-decoration: none;
@@ -313,8 +314,8 @@
 
   .about-tagline {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(1.5rem, 2.5vw, 2.1rem);
-    font-weight: 300;
+    font-size: clamp(1.7rem, 2.8vw, 2.4rem);
+    font-weight: 600;
     font-style: italic;
     color: var(--steel);
     line-height: 1.5;
@@ -322,7 +323,8 @@
   }
 
   .about-body {
-    font-size: 1.2rem;
+    font-size: 1.35rem;
+    font-weight: 600;
     color: var(--muted);
     line-height: 1.8;
     margin-bottom: 2.5rem;
@@ -354,7 +356,8 @@
   }
 
   .pillar p {
-    font-size: 1.05rem;
+    font-size: 1.2rem;
+    font-weight: 600;
     color: var(--muted);
     line-height: 1.7;
   }
@@ -380,8 +383,9 @@
   }
 
   .approach-intro {
-    font-size: 1.2rem;
-    color: rgba(245,242,235,0.6);
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: rgba(245,242,235,0.9);
     line-height: 1.75;
     max-width: 68ch;
     margin-bottom: 2.5rem;
@@ -421,16 +425,18 @@
   }
 
   .stage p {
-    font-size: 1rem;
-    color: rgba(245,242,235,0.55);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: rgba(245,242,235,0.88);
     line-height: 1.7;
     margin-bottom: 1.2rem;
   }
 
   .stage-output {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 0.88rem;
-    letter-spacing: 0.08em;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--accent-light);
     border-top: 1px solid rgba(245,242,235,0.12);
@@ -455,7 +461,8 @@
   .services-left h2 { margin-bottom: 1rem; }
 
   .services-intro {
-    font-size: 1.2rem;
+    font-size: 1.35rem;
+    font-weight: 600;
     color: var(--muted);
     line-height: 1.78;
     margin-bottom: 2rem;
@@ -463,8 +470,9 @@
 
   .services-note {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1rem;
-    letter-spacing: 0.04em;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
     color: var(--muted);
     padding: 1rem 1.2rem;
     border-left: 2px solid var(--accent);
@@ -507,7 +515,8 @@
   }
 
   .service-item p {
-    font-size: 1rem;
+    font-size: 1.15rem;
+    font-weight: 600;
     color: var(--muted);
     line-height: 1.7;
   }
@@ -531,8 +540,8 @@
   .philosophy-quote {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
-    font-size: clamp(1.5rem, 3vw, 2.4rem);
-    font-weight: 300;
+    font-size: clamp(1.6rem, 3vw, 2.6rem);
+    font-weight: 600;
     line-height: 1.55;
     color: var(--steel);
     max-width: 72ch;
@@ -540,7 +549,8 @@
   }
 
   .philosophy-body {
-    font-size: 1.2rem;
+    font-size: 1.35rem;
+    font-weight: 600;
     color: var(--muted);
     max-width: 60ch;
     margin: 0 auto;
@@ -560,7 +570,8 @@
   .contact-left h2 { margin-bottom: 1rem; }
 
   .contact-intro {
-    font-size: 1.2rem;
+    font-size: 1.35rem;
+    font-weight: 600;
     color: var(--muted);
     line-height: 1.8;
     margin-bottom: 2.5rem;
@@ -574,8 +585,9 @@
 
   .contact-detail {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.05rem;
-    letter-spacing: 0.06em;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
     color: var(--muted);
     display: flex;
     align-items: center;
@@ -639,7 +651,7 @@
   .form-submit {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     padding: 0.9rem 2.2rem;
@@ -782,23 +794,22 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#hero" class="logo-wrap">
-    <img src="https://drerlich.com/img/DrErlichLogo.png" alt="Dr. Markus Erlich Consulting">
-  </a>
   <ul>
     <li><a href="#about">About</a></li>
     <li><a href="#approach">Approach</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+  <a href="#hero" class="logo-wrap">
+    <img src="https://drerlich.com/img/DrErlichLogo.png" alt="Dr. Markus Erlich Consulting">
+  </a>
 </nav>
 
 <!-- HERO -->
 <section id="hero">
   <div class="hero-left">
-    <img src="https://drerlich.com/img/DrErlichLogo.png" class="hero-logo" alt="Dr. Markus Erlich Consulting">
     <div class="hero-eyebrow">Consulting</div>
-    <h1>Technical Strategy<br>&amp; <em>Marketing</em><br>for Engineering<br>Markets</h1>
+    <h1>Technical Strategy &amp; <em>Marketing</em> for Engineering Markets</h1>
     <p class="hero-desc">We help engineering-driven B2B technology companies translate complex capabilities into clear strategic positioning, differentiated value propositions, and disciplined go-to-market execution.</p>
     <div class="hero-ctas">
       <a href="#contact" class="btn-primary">Request a Call</a>
@@ -809,17 +820,7 @@
       <span class="pill">Automation</span>
       <span class="pill">Robotics</span>
       <span class="pill">Industrial Electronics</span>
-    </div>
-  </div>
-  <div class="hero-right">
-    <div class="hero-right-content">
-      <div class="hero-taglines">
-        <div class="hero-tagline-item">Motion Control &amp; Automation</div>
-        <div class="hero-tagline-item">Robotics</div>
-        <div class="hero-tagline-item">Industrial Electronics</div>
-        <div class="hero-tagline-item">Deep-Tech B2B</div>
-        <div class="hero-tagline-item">Engineering-driven Strategy</div>
-      </div>
+      <span class="pill">Deep-Tech B2B</span>
     </div>
   </div>
 </section>
